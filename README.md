@@ -1,7 +1,12 @@
 # 🎥 Online Screen Recorder Unlimited | 4K 60FPS & No Watermark
 
 **[👉 Launch Free Recorder Now](https://orbitwebtools.github.io/online-screen-recorder/)**
+![Version](https://img.shields.io/badge/Version-2.0.1--GodMode-4f46e5)
+![License](https://img.shields.io/badge/License-MIT-success)
+![Platform](https://img.shields.io/badge/Platform-Web--Browser-cyan)
+![Privacy](https://img.shields.io/badge/Privacy-100%25--Local-10b981)
 
+## 🎥 Online Screen Recorder Unlimited | 4K 60FPS & No Watermark
 ## 🔥 Why This is the Best Online Screen Recorder?
 Most "free" recorders add a watermark, limit you to 5 minutes, or force you to sign up. **ScreenRec Unlimited** breaks all those rules. It's a professional-grade tool that runs entirely in your browser.
 
