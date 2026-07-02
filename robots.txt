@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://orbitwebtools.github.io/online-screen-recorder/sitemap.xml
