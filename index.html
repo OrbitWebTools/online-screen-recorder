@@ -4,288 +4,435 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#4f46e5">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
 
-    <title>4K Screen Recorder Online | No Watermark & Unlimited | OrbitWebTools</title>
-    <meta name="title" content="4K Screen Recorder Online | No Watermark & Unlimited | OrbitWebTools">
-    <meta name="description" content="Professional 4K Screen Recorder. No Watermark, No Login, Unlimited Duration. Record Free Fire gameplay, tutorials, and meetings with System Audio & Mic instantly.">
-    <meta name="keywords" content="online screen recorder, 4k screen capture, no watermark recorder, free screen recorder, unlimited screen recording, orbitwebtools, gameplay recorder">
+    <!-- SEO Perfected Meta Tags -->
+    <title>Free 4K Screen Recorder Online | No Watermark | OrbitWebTools</title>
+    <meta name="description" content="Record your PC screen in 4K 60FPS online for free. Capture system audio and mic with no watermark and unlimited duration. Secure & completely browser-based.">
     
     <link rel="canonical" href="https://orbitwebtools.github.io/online-screen-recorder/" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎥</text></svg>">
 
+    <!-- Complete Open Graph & Twitter Cards -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://orbitwebtools.github.io/online-screen-recorder/">
-    <meta property="og:title" content="🔴 Instant 4K Screen Recorder (No Watermark)">
-    <meta property="og:description" content="Unlimited recording time. Crystal clear 60FPS. No software install needed. Try OrbitWebTools now!">
+    <meta property="og:title" content="Free 4K Screen Recorder Online | No Watermark">
+    <meta property="og:description" content="Record your PC screen in 4K 60FPS online for free. Capture system audio and mic with no watermark and unlimited duration.">
     <meta property="og:image" content="https://orbitwebtools.github.io/online-screen-recorder/banner.jpg">
+    <meta property="og:site_name" content="OrbitWebTools">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="🔴 Free 4K Screen Recorder - No Watermark">
+    <meta name="twitter:title" content="Free 4K Screen Recorder Online | No Watermark">
+    <meta name="twitter:description" content="Record your PC screen in 4K 60FPS online for free. Capture system audio and mic with no watermark.">
     <meta name="twitter:image" content="https://orbitwebtools.github.io/online-screen-recorder/banner.jpg">
 
+    <!-- Genuine Schema Markup -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
+      "@type": "WebApplication",
       "name": "OrbitWebTools Screen Recorder",
-      "operatingSystem": "Web Browser",
+      "url": "https://orbitwebtools.github.io/online-screen-recorder/",
       "applicationCategory": "MultimediaApplication",
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "ratingCount": "2150" },
-      "featureList": ["4K UHD Recording", "60 FPS Support", "No Watermark", "Unlimited Time", "System Audio Capture"]
+      "operatingSystem": "Windows, macOS, Linux, ChromeOS",
+      "description": "A professional client-side web application to record screen, windows, or tabs in 4K resolution at 60FPS with system audio and microphone support. No watermark and unlimited recording time.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
+      "creator": { "@type": "Organization", "name": "OrbitWebTools", "url": "https://orbitwebtools.github.io/" }
     }
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 
     <style>
         :root {
             --primary: #4f46e5;
-            --primary-dark: #4338ca;
-            --accent: #06b6d4;
+            --primary-hover: #4338ca;
+            --accent: #0ea5e9;
             --bg: #f8fafc;
             --surface: #ffffff;
             --text-main: #0f172a;
-            --text-sub: #64748b;
+            --text-sub: #475569;
             --border: #e2e8f0;
             --success: #10b981;
-            --whatsapp: #25D366;
-            --shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            --danger: #ef4444;
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --radius: 24px;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); color: var(--text-main); display: flex; flex-direction: column; align-items: center; min-height: 100vh; overflow-x: hidden; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); color: var(--text-main); line-height: 1.6; -webkit-font-smoothing: antialiased; }
 
-        nav { width: 100%; padding: 1rem 2rem; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 100; }
-        .brand { font-size: 1.4rem; font-weight: 800; letter-spacing: -0.5px; }
-        .brand span { background: linear-gradient(135deg, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .badge-pro { background: #eff6ff; color: var(--primary); padding: 4px 12px; border-radius: 50px; font-size: 0.7rem; font-weight: 800; border: 1px solid #dbeafe; }
+        /* Header */
+        header { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
+        .header-inner { max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.4rem; font-weight: 800; text-decoration: none; color: var(--text-main); display: flex; align-items: center; gap: 8px; }
+        .logo span { color: var(--primary); }
+        .badge { background: #e0e7ff; color: var(--primary); padding: 6px 14px; border-radius: 100px; font-size: 0.75rem; font-weight: 800; border: 1px solid #c7d2fe; letter-spacing: 0.5px; }
 
-        .container { width: 100%; max-width: 1000px; padding: 2rem 1.5rem; }
+        /* Hero */
+        .hero { text-align: center; max-width: 800px; margin: 40px auto; padding: 0 20px; }
+        h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; line-height: 1.1; margin-bottom: 16px; letter-spacing: -1px; }
+        .text-gradient { background: linear-gradient(135deg, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: 1.1rem; color: var(--text-sub); max-width: 600px; margin: 0 auto; }
 
-        .hero { text-align: center; margin-bottom: 3rem; }
-        h1 { font-size: 3rem; font-weight: 800; letter-spacing: -1.5px; margin-bottom: 10px; line-height: 1.1; }
-        .hero p { color: var(--text-sub); font-size: 1.1rem; }
-
-        .app-shell { background: var(--surface); border-radius: 28px; border: 1px solid var(--border); box-shadow: var(--shadow); overflow: hidden; position: relative; }
-
-        .toolbar { display: flex; flex-wrap: wrap; gap: 15px; padding: 25px; background: #fcfdfe; border-bottom: 1px solid var(--border); }
-        .tool-group { flex: 1; min-width: 140px; }
-        .label { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px; display: block; letter-spacing: 0.5px; }
-        select { width: 100%; padding: 12px; border-radius: 12px; border: 1px solid var(--border); font-weight: 600; cursor: pointer; background: white; transition: 0.2s; }
-        select:hover { border-color: var(--primary); }
-
-        .preview-stage { position: relative; width: 100%; aspect-ratio: 16/9; background: #000; display: flex; align-items: center; justify-content: center; }
-        video { width: 100%; height: 100%; object-fit: contain; border-radius: 4px; }
-
-        .rec-pill { position: absolute; top: 20px; left: 20px; background: rgba(239, 68, 68, 0.9); color: white; padding: 10px 20px; border-radius: 50px; font-weight: 800; font-size: 0.85rem; display: none; align-items: center; gap: 10px; z-index: 10; backdrop-filter: blur(5px); }
-        .dot { width: 10px; height: 10px; background: white; border-radius: 50%; animation: blink 1.2s infinite; }
-        @keyframes blink { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.8); } }
-
-        .actions { padding: 30px; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; background: white; }
-        .btn { padding: 16px 35px; border-radius: 14px; font-weight: 700; border: none; cursor: pointer; transition: 0.2s; display: flex; align-items: center; gap: 10px; font-size: 1rem; }
-        .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
-        .btn:active { transform: scale(0.96); }
-
-        .btn-start { background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: white; }
-        .btn-stop { background: var(--text-main); color: white; display: none; }
-        .btn-dl { background: linear-gradient(135deg, var(--success), #059669); color: white; display: none; }
-        .btn-share { background: var(--whatsapp); color: white; display: none; }
-
-        .seo-box { margin-top: 50px; padding: 40px; background: white; border-radius: 24px; border: 1px solid var(--border); line-height: 1.8; }
-        .seo-box h2 { margin-bottom: 20px; font-size: 1.8rem; color: var(--primary); letter-spacing: -0.5px; }
-        .seo-box p { margin-bottom: 15px; color: var(--text-sub); }
-
-        footer { margin: 60px 0 30px; color: var(--text-sub); font-size: 0.9rem; text-align: center; border-top: 1px solid var(--border); padding-top: 20px; width: 100%; max-width: 1000px; }
+        /* App Container */
+        .app-container { max-width: 1000px; margin: 0 auto 60px; padding: 0 20px; }
         
-        #msg { pointer-events: none; }
+        /* Mobile Warning (Crucial for UX & Bounce Rate) */
+        #mobileWarning { display: none; background: #fffbeb; border: 1px solid #fde68a; padding: 24px; border-radius: 16px; text-align: center; margin-bottom: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+        #mobileWarning h3 { color: #d97706; font-weight: 800; margin-bottom: 8px; font-size: 1.2rem; }
+        #mobileWarning p { color: #b45309; font-size: 0.95rem; }
+
+        .app-shell { background: var(--surface); border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow-lg); overflow: hidden; }
+
+        /* Toolbar */
+        .toolbar { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; padding: 24px; background: #f8fafc; border-bottom: 1px solid var(--border); }
+        .tool-group { display: flex; flex-direction: column; gap: 8px; }
+        .label { font-size: 0.8rem; font-weight: 700; color: var(--text-sub); text-transform: uppercase; letter-spacing: 0.5px; }
+        .select-input { padding: 12px 16px; border-radius: 12px; border: 1px solid var(--border); font-family: inherit; font-size: 0.95rem; font-weight: 600; color: var(--text-main); background: white; cursor: pointer; transition: all 0.2s; outline: none; appearance: auto; }
+        .select-input:focus, .select-input:hover { border-color: var(--primary); box-shadow: 0 0 0 3px #e0e7ff; }
+
+        /* Preview Stage */
+        .preview-stage { position: relative; width: 100%; aspect-ratio: 16/9; background: #020617; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        video { width: 100%; height: 100%; object-fit: contain; }
+        
+        .empty-state { position: absolute; text-align: center; color: white; z-index: 5; pointer-events: none; }
+        .empty-icon { font-size: 3rem; margin-bottom: 12px; opacity: 0.8; display: block; }
+        .empty-text { font-weight: 700; font-size: 1.25rem; margin-bottom: 8px; }
+        .empty-sub { font-size: 0.9rem; opacity: 0.7; }
+
+        .rec-pill { position: absolute; top: 20px; left: 20px; background: rgba(239, 68, 68, 0.9); backdrop-filter: blur(8px); color: white; padding: 10px 20px; border-radius: 100px; font-weight: 800; font-size: 0.9rem; display: none; align-items: center; gap: 10px; z-index: 10; box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3); }
+        .rec-dot { width: 10px; height: 10px; background: white; border-radius: 50%; animation: pulse 1.5s infinite; }
+        @keyframes pulse { 0% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.8); } 100% { opacity: 1; transform: scale(1); } }
+
+        /* Action Buttons */
+        .actions { padding: 32px 24px; display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; background: white; }
+        .btn { padding: 16px 32px; border-radius: 16px; font-weight: 700; font-size: 1rem; border: none; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 10px; min-width: 220px; }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 20px -5px rgba(0,0,0,0.15); }
+        .btn:active { transform: translateY(0); }
+        .btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; box-shadow: none; }
+
+        .btn-start { background: linear-gradient(135deg, var(--primary), var(--accent)); color: white; }
+        .btn-stop { background: var(--danger); color: white; display: none; }
+        .btn-dl { background: linear-gradient(135deg, var(--success), #059669); color: white; display: none; }
+
+        /* SEO SECTION (Fade Out Logic) */
+        .seo-wrapper { max-width: 1000px; margin: 0 auto 60px; position: relative; background: var(--surface); border-radius: var(--radius); border: 1px solid var(--border); overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
+        .seo-content { padding: 40px; max-height: 250px; overflow: hidden; transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1); }
+        .seo-content.expanded { max-height: 8000px; }
+        
+        .seo-fade { position: absolute; bottom: 0; left: 0; right: 0; height: 150px; background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 80%); display: flex; align-items: flex-end; justify-content: center; padding-bottom: 20px; transition: opacity 0.3s; }
+        .seo-content.expanded + .seo-fade { opacity: 0; pointer-events: none; }
+        
+        .seo-toggle-btn { background: white; border: 2px solid var(--primary); color: var(--primary); padding: 12px 28px; border-radius: 100px; font-weight: 700; cursor: pointer; transition: 0.2s; font-size: 0.95rem; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .seo-toggle-btn:hover { background: var(--primary-light); transform: translateY(-2px); }
+        .collapse-btn-container { text-align: center; padding-bottom: 30px; display: none; }
+
+        /* SEO Typography */
+        .seo-content h2 { font-size: 1.8rem; margin: 30px 0 16px; color: var(--text-main); font-weight: 800; letter-spacing: -0.5px; }
+        .seo-content h2:first-child { margin-top: 0; }
+        .seo-content h3 { font-size: 1.3rem; margin: 24px 0 12px; color: var(--primary); font-weight: 700; }
+        .seo-content p { color: var(--text-sub); margin-bottom: 16px; font-size: 1.05rem; }
+        .seo-content ul { padding-left: 24px; margin-bottom: 20px; color: var(--text-sub); font-size: 1.05rem; }
+        .seo-content li { margin-bottom: 8px; }
+
+        /* Footer */
+        footer { border-top: 1px solid var(--border); padding: 40px 20px; text-align: center; background: white; }
+        .footer-logo { font-size: 1.5rem; font-weight: 800; margin-bottom: 16px; }
+        .footer-logo span { color: var(--primary); }
+        .internal-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 24px; }
+        .internal-links a { background: var(--bg); border: 1px solid var(--border); padding: 8px 16px; border-radius: 100px; font-size: 0.9rem; font-weight: 600; color: var(--text-main); transition: 0.2s; }
+        .internal-links a:hover { border-color: var(--primary); color: var(--primary); }
+        .copyright { color: var(--text-sub); font-size: 0.95rem; }
 
         @media(max-width: 768px) {
-            h1 { font-size: 2.2rem; }
-            .toolbar { flex-direction: column; }
-            .actions { flex-direction: column; }
-            .btn { width: 100%; justify-content: center; }
+            .toolbar { grid-template-columns: 1fr; }
+            .btn { width: 100%; }
         }
     </style>
 </head>
 <body>
 
-    <nav>
-        <div class="brand">OrbitWeb<span>Tools</span></div>
-        <div class="badge-pro">GOD MODE 2.0</div>
-    </nav>
+    <header>
+        <div class="header-inner">
+            <a href="/" class="logo">Orbit<span>Web</span>Tools</a>
+            <div class="badge">100% PRIVATE & FREE</div>
+        </div>
+    </header>
 
-    <div class="container">
+    <div class="hero">
+        <h1>4K Screen Recorder Online Free</h1>
+        <p>Capture unlimited PC gameplay, tutorials, and meetings in 60FPS. No watermark, no software installation, and strictly zero server uploads.</p>
+    </div>
+
+    <div class="app-container">
         
-        <div class="hero">
-            <div style="background: #e0e7ff; color: var(--primary); padding: 6px 16px; border-radius: 50px; font-size: 0.75rem; font-weight: 800; display: inline-block; margin-bottom: 15px;">FREE ONLINE UTILITY</div>
-            <h1>Record Your Screen <br>in <span style="color:var(--primary)">4K Quality</span></h1>
-            <p>No Watermark. No Time Limits. No Install. <br>Capture gameplay and tutorials with system audio instantly.</p>
+        <!-- MOBILE BOUNCE RATE FIX: Clear UX message for mobile users -->
+        <div id="mobileWarning">
+            <h3>⚠️ Desktop Browser Required</h3>
+            <p>Screen recording APIs are intentionally disabled by Apple and Google on mobile browsers for security. Please open this website on your <strong>Windows PC, Mac, or Laptop</strong> to start recording.</p>
         </div>
 
-        <div class="app-shell">
+        <div class="app-shell" id="desktopApp">
             <div class="toolbar">
                 <div class="tool-group">
-                    <span class="label">Resolution</span>
-                    <select id="res">
-                        <option value="1080">Full HD (1080p)</option>
-                        <option value="2160">Ultra HD (4K)</option>
-                        <option value="720">HD (720p)</option>
+                    <span class="label">Video Quality</span>
+                    <select id="resSelect" class="select-input">
+                        <option value="1080">Full HD (1080p) - Recommended</option>
+                        <option value="2160">Ultra HD (4K) - High Quality</option>
+                        <option value="720">HD (720p) - Small File Size</option>
                     </select>
                 </div>
                 <div class="tool-group">
                     <span class="label">Frame Rate</span>
-                    <select id="fps">
-                        <option value="60">60 FPS (Pro Gaming)</option>
-                        <option value="30">30 FPS (Standard)</option>
+                    <select id="fpsSelect" class="select-input">
+                        <option value="60">60 FPS (Smooth / Gaming)</option>
+                        <option value="30">30 FPS (Standard / Meetings)</option>
                     </select>
                 </div>
                 <div class="tool-group">
-                    <span class="label">Audio Settings</span>
-                    <select id="audio">
-                        <option value="both">Mic + System Sound</option>
-                        <option value="sys">System Sound Only</option>
+                    <span class="label">Audio Source</span>
+                    <select id="audioSelect" class="select-input">
+                        <option value="both">System Audio + Microphone</option>
+                        <option value="sys">System Audio Only</option>
                         <option value="mic">Microphone Only</option>
+                        <option value="none">No Audio (Mute)</option>
                     </select>
                 </div>
             </div>
 
             <div class="preview-stage">
-                <div class="rec-pill" id="badge"><div class="dot"></div> REC: <span id="timer">00:00</span></div>
-                <video id="v" autoplay muted playsinline></video>
-                <div id="msg" style="color:white; text-align:center; position:absolute; z-index: 5;">
-                    <p style="font-weight:800; font-size:1.5rem; margin-bottom: 5px;">Ready to Capture</p>
-                    <p style="font-size:0.95rem; opacity:0.6;">Select your preferences and hit Start</p>
+                <div class="rec-pill" id="recBadge">
+                    <div class="rec-dot"></div> REC: <span id="timerText">00:00</span>
                 </div>
+                
+                <div class="empty-state" id="emptyState">
+                    <span class="empty-icon">📺</span>
+                    <div class="empty-text">Ready to Capture</div>
+                    <div class="empty-sub">Select your settings and click Start Recording</div>
+                </div>
+
+                <video id="previewVideo" autoplay muted playsinline></video>
             </div>
 
             <div class="actions">
                 <button class="btn btn-start" id="startBtn">🔴 Start Recording</button>
-                <button class="btn btn-stop" id="stopBtn">⬛ Stop & Finish</button>
+                <button class="btn btn-stop" id="stopBtn">⬛ Stop & Save</button>
                 <button class="btn btn-dl" id="dlBtn">💾 Download Video</button>
-                <button class="btn btn-share" id="shareBtn">💬 Share Tool</button>
             </div>
         </div>
-
-        <div class="seo-box">
-            <h2>The Ultimate 4K Screen Recorder for Everyone</h2>
-            <p><strong>OrbitWebTools Screen Recorder</strong> is a high-performance, web-based utility designed for creators, gamers, and professionals. Capture your browser, specific windows, or your entire screen with <strong>Zero Latency</strong>.</p>
-            <p>Perfect for recording <strong>Free Fire</strong>, <strong>Indian Bike Driving 3D</strong>, or high-end coding tutorials. Unlike other tools, we provide <strong>Unlimited Duration</strong> and never add watermarks to your hard work. Everything is processed 100% locally in your browser for total privacy.</p>
-        </div>
-
-        <footer>
-            <p>© 2026 OrbitWebTools • Build for Creators • Privacy First Architecture</p>
-        </footer>
     </div>
 
+    <!-- SEO CONTENT (Hidden by Gradient) -->
+    <div class="seo-wrapper" id="seoWrapper">
+        <article class="seo-content" id="seoContentBox">
+            <h2>The Best 4K Screen Recorder Online Without Watermark</h2>
+            <p>Welcome to the ultimate solution for screen capturing. Whether you are an educator recording a tutorial, a professional capturing a Microsoft Teams meeting, or a gamer showcasing your skills, our <strong>free screen recorder online</strong> is designed to meet your demands without the hassle of downloading heavy software like OBS or Bandicam.</p>
+            <p>Most free tools available on the internet force a huge, ugly watermark on your final video or restrict your recording time to 5 minutes. We have engineered OrbitWebTools to offer <strong>unlimited recording time</strong> and absolutely <strong>no watermark</strong>.</p>
+
+            <h2>Why Choose Our Browser-Based Recorder?</h2>
+            <ul>
+                <li><strong>Stunning 4K 60FPS Quality:</strong> Capture every single pixel. Choose between standard 1080p for presentations or push your hardware to capture true Ultra HD (4K) at a buttery smooth 60 frames per second.</li>
+                <li><strong>Complete Audio Control:</strong> Need to record a reaction video? Select "System Audio + Microphone" to capture your internal PC game sound along with your voice simultaneously.</li>
+                <li><strong>Zero Installation:</strong> Our tool uses HTML5 and advanced WebRTC APIs directly within Chrome, Edge, and Safari. No `.exe` files, no browser extensions, and no malware risks.</li>
+                <li><strong>100% Privacy & Security:</strong> How do we ensure your data is safe? Simple. <strong>We do not have a server to store your videos.</strong> The recording happens in your browser's local memory and is rendered directly to your hard drive. Your private meetings stay private.</li>
+            </ul>
+
+            <h2>How to Record Your Screen on Windows & Mac?</h2>
+            <p>Using our interface is extremely straightforward, even for beginners. Follow these steps to get a professional output:</p>
+            <ol>
+                <li><strong>Select Video Quality:</strong> From the toolbar, choose 1080p or 4K. If you are recording simple browser tabs, 1080p is sufficient. For high-end gaming, select 4K.</li>
+                <li><strong>Configure Audio:</strong> Choose whether you want your microphone active, just the system sound (game/video audio), or both.</li>
+                <li><strong>Click Start:</strong> Once you click 'Start Recording', your browser will ask for permission to share the screen. You can choose to share the 'Entire Screen', a 'Specific Window', or a 'Chrome Tab'. Note: To capture system audio, ensure you check the "Share Audio" box in the browser prompt.</li>
+                <li><strong>Stop & Download:</strong> Click the stop button when you are done. The video will be compiled locally in WEBM or MP4 format (depending on browser support) and will be ready for an instant download.</li>
+            </ol>
+
+            <h2>Important Note on Memory & Long Recordings (Crash Prevention)</h2>
+            <p>Because our tool operates entirely in your browser to protect your privacy, long recordings (e.g., 2+ hours in 4K resolution) can consume significant RAM (Random Access Memory). If your PC runs out of RAM, the browser tab may crash, resulting in data loss. We highly recommend keeping high-resolution recordings under 1 hour per session, or downloading files periodically.</p>
+
+            <h2>Frequently Asked Questions (FAQs)</h2>
+            <h3>Is this tool actually free with no watermark?</h3>
+            <p>Yes. There are no hidden paywalls, no login walls, and we never stamp our logo on your videos. You own 100% of your content.</p>
+
+            <h3>Why can't I use this on my mobile phone?</h3>
+            <p>Mobile operating systems like Android and iOS restrict web browsers from capturing the entire device screen due to privacy and security protocols. Screen recording via a browser API is strictly a Desktop/Laptop feature.</p>
+
+            <h3>How do I record internal audio on a Mac?</h3>
+            <p>Apple macOS has strict security rules regarding internal audio capture via browsers. While you can easily record a specific Chrome Tab's audio, capturing the entire system audio on Mac via a web browser might require third-party virtual audio cables like BlackHole or Loopback.</p>
+        </article>
+        
+        <div class="seo-fade" id="seoFade">
+            <button onclick="toggleSEO()" class="seo-toggle-btn">📖 Read Full Guide & FAQs</button>
+        </div>
+        
+        <div id="seoCollapseBtn" class="collapse-btn-container">
+            <button onclick="toggleSEO()" class="seo-toggle-btn">⬆️ Collapse Guide</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-logo">Orbit<span>Web</span>Tools</div>
+        <div class="internal-links">
+            <a href="https://orbitwebtools.github.io/PhotoReady/">📸 PhotoReady (Add Date & Crop)</a>
+            <a href="https://orbitwebtools.github.io/image-resizer-20kb/">🖼️ Image Resizer to 20KB</a>
+            <a href="https://orbitwebtools.github.io/add-name-and-date/">📝 Name & Date to Passport Photo</a>
+        </div>
+        <p class="copyright">© 2026 OrbitWebTools. Engineered for Creators & Students. 100% Client-Side Architecture.</p>
+    </footer>
+
     <script>
+        // --- UX Handling: Mobile vs Desktop ---
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        if (isMobile) {
+            document.getElementById('mobileWarning').style.display = 'block';
+            document.getElementById('desktopApp').style.display = 'none';
+        }
+
+        // --- SEO Fade Toggle Logic ---
+        function toggleSEO() {
+            const box = document.getElementById('seoContentBox');
+            const fade = document.getElementById('seoFade');
+            const collapseBtn = document.getElementById('seoCollapseBtn');
+            
+            box.classList.toggle('expanded');
+            
+            if (box.classList.contains('expanded')) {
+                fade.style.opacity = '0';
+                setTimeout(() => { fade.style.display = 'none'; }, 300);
+                collapseBtn.style.display = 'block';
+            } else {
+                fade.style.display = 'flex';
+                setTimeout(() => { fade.style.opacity = '1'; }, 10);
+                collapseBtn.style.display = 'none';
+                document.getElementById('seoWrapper').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        // --- Core Application Logic ---
         const startBtn = document.getElementById('startBtn');
         const stopBtn = document.getElementById('stopBtn');
         const dlBtn = document.getElementById('dlBtn');
-        const shareBtn = document.getElementById('shareBtn');
-        const v = document.getElementById('v');
-        const badge = document.getElementById('badge');
-        const timerTxt = document.getElementById('timer');
-        const msg = document.getElementById('msg');
+        const previewVideo = document.getElementById('previewVideo');
+        const emptyState = document.getElementById('emptyState');
+        const recBadge = document.getElementById('recBadge');
+        const timerText = document.getElementById('timerText');
 
-        let recorder, chunks = [], stream, timerInterval;
+        let recorder, stream, timerInterval, videoBlobUrl;
+        let chunks = [];
 
-        const getMime = () => {
-            const types = ['video/webm;codecs=vp9', 'video/webm;codecs=vp8', 'video/webm', 'video/mp4'];
+        // Check best supported format
+        const getMimeType = () => {
+            const types = ['video/webm;codecs=vp9,opus', 'video/webm;codecs=vp8,opus', 'video/webm', 'video/mp4'];
             return types.find(t => MediaRecorder.isTypeSupported(t)) || '';
         };
 
         startBtn.onclick = async () => {
             try {
-                const resolution = document.getElementById('res').value;
-                const fps = document.getElementById('fps').value;
-                const audioType = document.getElementById('audio').value;
+                const res = document.getElementById('resSelect').value;
+                const fps = parseInt(document.getElementById('fpsSelect').value);
+                const audioConfig = document.getElementById('audioSelect').value;
 
-                // 1. Request Screen Capture
+                // 1. Request Display Media
                 stream = await navigator.mediaDevices.getDisplayMedia({
-                    video: { width: resolution == '2160' ? 3840 : 1920, frameRate: fps },
-                    audio: audioType !== 'mic'
+                    video: { 
+                        width: res == '2160' ? 3840 : (res == '720' ? 1280 : 1920), 
+                        frameRate: { ideal: fps, max: fps }
+                    },
+                    audio: (audioConfig === 'both' || audioConfig === 'sys') ? { echoCancellation: false, noiseSuppression: false } : false
                 });
 
-                // 2. Request Mic if selected
-                if(audioType === 'both' || audioType === 'mic') {
+                // 2. Request Microphone if needed
+                if (audioConfig === 'both' || audioConfig === 'mic') {
                     try {
-                        const mic = await navigator.mediaDevices.getUserMedia({ audio: true });
-                        mic.getAudioTracks().forEach(track => stream.addTrack(track));
-                    } catch(e) { console.warn("Microphone access denied."); }
+                        const micStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                        micStream.getAudioTracks().forEach(track => stream.addTrack(track));
+                    } catch (e) {
+                        alert("Microphone access denied. Continuing without Mic.");
+                    }
                 }
 
-                const mime = getMime();
+                // 3. Setup Recorder
+                const mime = getMimeType();
+                
+                // Bitrate optimization based on resolution
+                let bitrate = 8000000; // 8 Mbps for 1080p
+                if (res == '2160') bitrate = 25000000; // 25 Mbps for 4K
+                if (res == '720') bitrate = 3000000; // 3 Mbps for 720p
+
                 recorder = new MediaRecorder(stream, { 
                     mimeType: mime, 
-                    videoBitsPerSecond: resolution == '2160' ? 25000000 : 8000000 
+                    videoBitsPerSecond: bitrate 
                 });
 
-                recorder.ondataavailable = e => { if(e.data.size > 0) chunks.push(e.data); };
+                recorder.ondataavailable = e => { 
+                    if(e.data && e.data.size > 0) chunks.push(e.data); 
+                };
                 
                 recorder.onstop = () => {
                     clearInterval(timerInterval);
                     const blob = new Blob(chunks, { type: mime });
-                    const url = URL.createObjectURL(blob);
+                    videoBlobUrl = URL.createObjectURL(blob);
                     
-                    v.srcObject = null;
-                    v.src = url;
-                    v.controls = true;
-                    v.muted = false;
+                    previewVideo.srcObject = null;
+                    previewVideo.src = videoBlobUrl;
+                    previewVideo.controls = true;
                     
-                    dlBtn.onclick = () => {
-                        const a = document.createElement('a');
-                        a.href = url;
-                        a.download = `OrbitRec_${Date.now()}.${mime.includes('mp4') ? 'mp4' : 'webm'}`;
-                        a.click();
-                    };
-
-                    badge.style.display = 'none';
+                    recBadge.style.display = 'none';
                     stopBtn.style.display = 'none';
                     dlBtn.style.display = 'flex';
-                    shareBtn.style.display = 'flex';
+                    
                     startBtn.style.display = 'flex';
-                    startBtn.innerText = "Record New Video";
+                    startBtn.innerText = "Record Another Video";
+                    
+                    // Setup Download Button
+                    dlBtn.onclick = () => {
+                        const a = document.createElement('a');
+                        a.href = videoBlobUrl;
+                        a.download = `OrbitWebTools_Capture_${Date.now()}.${mime.includes('mp4') ? 'mp4' : 'webm'}`;
+                        a.click();
+                    };
                 };
 
-                recorder.start();
+                // Start recording with timeslice (2000ms) to manage memory efficiently in browser
+                recorder.start(2000); 
                 chunks = [];
-                v.srcObject = stream;
-                msg.style.display = 'none';
+                
+                // UI Updates
+                previewVideo.srcObject = stream;
+                emptyState.style.display = 'none';
                 startBtn.style.display = 'none';
-                stopBtn.style.display = 'flex';
                 dlBtn.style.display = 'none';
-                shareBtn.style.display = 'none';
-                badge.style.display = 'flex';
+                stopBtn.style.display = 'flex';
+                recBadge.style.display = 'flex';
 
-                let secCount = 0;
+                // Timer
+                let seconds = 0;
                 timerInterval = setInterval(() => {
-                    secCount++;
-                    let m = Math.floor(secCount/60).toString().padStart(2,'0');
-                    let s = (secCount%60).toString().padStart(2,'0');
-                    timerTxt.innerText = `${m}:${s}`;
+                    seconds++;
+                    let m = Math.floor(seconds / 60).toString().padStart(2, '0');
+                    let s = (seconds % 60).toString().padStart(2, '0');
+                    timerText.innerText = `${m}:${s}`;
                 }, 1000);
 
-                // Stop if user clicks browser's "Stop Sharing" button
-                stream.getVideoTracks()[0].onended = () => stopBtn.click();
+                // Stop if user uses native browser "Stop Sharing" button
+                stream.getVideoTracks()[0].onended = () => {
+                    if (recorder.state === 'recording') stopBtn.click();
+                };
 
             } catch (err) {
-                if(err.name !== 'NotAllowedError') alert("Capture Error: " + err.message);
+                if (err.name !== 'NotAllowedError') {
+                    alert("Capture Error: Your browser might not support screen recording or permission was denied.");
+                }
             }
         };
 
         stopBtn.onclick = () => {
-            if(recorder && recorder.state !== 'inactive') {
+            if (recorder && recorder.state !== 'inactive') {
                 recorder.stop();
                 stream.getTracks().forEach(t => t.stop());
             }
-        };
-
-        shareBtn.onclick = () => {
-            const text = encodeURIComponent("Check out this 4K Screen Recorder! No watermark, works in browser. 🔥");
-            const url = encodeURIComponent(window.location.href);
-            window.open(`https://api.whatsapp.com/send?text=${text} ${url}`, '_blank');
         };
     </script>
 </body>
