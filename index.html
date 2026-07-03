@@ -6,14 +6,12 @@
     <meta name="theme-color" content="#4f46e5">
     <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
 
-    <!-- SEO Perfected Meta Tags -->
     <title>Free 4K Screen Recorder Online | No Watermark | OrbitWebTools</title>
-    <meta name="description" content="Record your PC screen in 4K 60FPS online for free. Capture system audio and mic with no watermark and unlimited duration. Secure & completely browser-based.">
+    <meta name="description" content="Record your PC screen in 4K 60FPS online for free. Capture system audio and mic with no watermark and unlimited duration. Secure & browser-based.">
     
-    <link rel="canonical" href="https://orbitwebtools.github.io/online-screen-recorder/" />
+    <link rel="canonical" href="https://orbitwebtools.github.io/online-screen-recorder/">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎥</text></svg>">
 
-    <!-- Complete Open Graph & Twitter Cards -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://orbitwebtools.github.io/online-screen-recorder/">
     <meta property="og:title" content="Free 4K Screen Recorder Online | No Watermark">
@@ -26,7 +24,6 @@
     <meta name="twitter:description" content="Record your PC screen in 4K 60FPS online for free. Capture system audio and mic with no watermark.">
     <meta name="twitter:image" content="https://orbitwebtools.github.io/online-screen-recorder/banner.jpg">
 
-    <!-- Genuine Schema Markup -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -43,13 +40,12 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 
     <style>
         :root {
             --primary: #4f46e5;
             --primary-hover: #4338ca;
-            --accent: #0ea5e9;
             --bg: #f8fafc;
             --surface: #ffffff;
             --text-main: #0f172a;
@@ -57,95 +53,84 @@
             --border: #e2e8f0;
             --success: #10b981;
             --danger: #ef4444;
-            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-            --radius: 24px;
+            --radius: 20px;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); color: var(--text-main); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); color: var(--text-main); line-height: 1.6; }
+        a { text-decoration: none; color: inherit; }
 
         /* Header */
-        header { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
-        .header-inner { max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.4rem; font-weight: 800; text-decoration: none; color: var(--text-main); display: flex; align-items: center; gap: 8px; }
+        header { background: rgba(255, 255, 255, 0.95); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
+        .header-inner { max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.3rem; font-weight: 800; color: var(--text-main); }
         .logo span { color: var(--primary); }
-        .badge { background: #e0e7ff; color: var(--primary); padding: 6px 14px; border-radius: 100px; font-size: 0.75rem; font-weight: 800; border: 1px solid #c7d2fe; letter-spacing: 0.5px; }
+        .badge { background: #e0e7ff; color: var(--primary); padding: 5px 12px; border-radius: 50px; font-size: 0.75rem; font-weight: 800; border: 1px solid #c7d2fe; }
 
         /* Hero */
         .hero { text-align: center; max-width: 800px; margin: 40px auto; padding: 0 20px; }
-        h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; line-height: 1.1; margin-bottom: 16px; letter-spacing: -1px; }
-        .text-gradient { background: linear-gradient(135deg, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; line-height: 1.2; margin-bottom: 15px; letter-spacing: -1px; }
         .hero p { font-size: 1.1rem; color: var(--text-sub); max-width: 600px; margin: 0 auto; }
 
-        /* App Container */
-        .app-container { max-width: 1000px; margin: 0 auto 60px; padding: 0 20px; }
-        
-        /* Mobile Warning (Crucial for UX & Bounce Rate) */
-        #mobileWarning { display: none; background: #fffbeb; border: 1px solid #fde68a; padding: 24px; border-radius: 16px; text-align: center; margin-bottom: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
-        #mobileWarning h3 { color: #d97706; font-weight: 800; margin-bottom: 8px; font-size: 1.2rem; }
+        /* Mobile Warning */
+        #mobileWarning { display: none; background: #fffbeb; border: 1px solid #fde68a; padding: 20px; border-radius: 12px; text-align: center; margin: 0 auto 24px; max-width: 960px; }
+        #mobileWarning h3 { color: #d97706; font-weight: 800; margin-bottom: 5px; }
         #mobileWarning p { color: #b45309; font-size: 0.95rem; }
 
-        .app-shell { background: var(--surface); border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow-lg); overflow: hidden; }
+        /* App Container */
+        .app-container { max-width: 960px; margin: 0 auto 50px; padding: 0 20px; }
+        .app-shell { background: var(--surface); border-radius: var(--radius); border: 1px solid var(--border); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05); overflow: hidden; }
 
         /* Toolbar */
-        .toolbar { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; padding: 24px; background: #f8fafc; border-bottom: 1px solid var(--border); }
-        .tool-group { display: flex; flex-direction: column; gap: 8px; }
-        .label { font-size: 0.8rem; font-weight: 700; color: var(--text-sub); text-transform: uppercase; letter-spacing: 0.5px; }
-        .select-input { padding: 12px 16px; border-radius: 12px; border: 1px solid var(--border); font-family: inherit; font-size: 0.95rem; font-weight: 600; color: var(--text-main); background: white; cursor: pointer; transition: all 0.2s; outline: none; appearance: auto; }
-        .select-input:focus, .select-input:hover { border-color: var(--primary); box-shadow: 0 0 0 3px #e0e7ff; }
+        .toolbar { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; padding: 20px; background: #f8fafc; border-bottom: 1px solid var(--border); }
+        .tool-group { display: flex; flex-direction: column; gap: 5px; }
+        .label { font-size: 0.8rem; font-weight: 700; color: var(--text-sub); text-transform: uppercase; }
+        .select-input { padding: 10px; border-radius: 8px; border: 1px solid var(--border); font-family: inherit; font-size: 0.95rem; font-weight: 600; cursor: pointer; transition: 0.2s; outline: none; }
+        .select-input:focus { border-color: var(--primary); }
 
         /* Preview Stage */
         .preview-stage { position: relative; width: 100%; aspect-ratio: 16/9; background: #020617; display: flex; align-items: center; justify-content: center; overflow: hidden; }
         video { width: 100%; height: 100%; object-fit: contain; }
         
-        .empty-state { position: absolute; text-align: center; color: white; z-index: 5; pointer-events: none; }
-        .empty-icon { font-size: 3rem; margin-bottom: 12px; opacity: 0.8; display: block; }
-        .empty-text { font-weight: 700; font-size: 1.25rem; margin-bottom: 8px; }
+        .empty-state { position: absolute; text-align: center; color: white; pointer-events: none; }
+        .empty-text { font-weight: 700; font-size: 1.2rem; margin-bottom: 5px; }
         .empty-sub { font-size: 0.9rem; opacity: 0.7; }
 
-        .rec-pill { position: absolute; top: 20px; left: 20px; background: rgba(239, 68, 68, 0.9); backdrop-filter: blur(8px); color: white; padding: 10px 20px; border-radius: 100px; font-weight: 800; font-size: 0.9rem; display: none; align-items: center; gap: 10px; z-index: 10; box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3); }
+        .rec-pill { position: absolute; top: 15px; left: 15px; background: rgba(239, 68, 68, 0.9); color: white; padding: 8px 16px; border-radius: 50px; font-weight: 700; font-size: 0.9rem; display: none; align-items: center; gap: 8px; z-index: 10; }
         .rec-dot { width: 10px; height: 10px; background: white; border-radius: 50%; animation: pulse 1.5s infinite; }
-        @keyframes pulse { 0% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.8); } 100% { opacity: 1; transform: scale(1); } }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
 
-        /* Action Buttons */
-        .actions { padding: 32px 24px; display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; background: white; }
-        .btn { padding: 16px 32px; border-radius: 16px; font-weight: 700; font-size: 1rem; border: none; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 10px; min-width: 220px; }
-        .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 20px -5px rgba(0,0,0,0.15); }
-        .btn:active { transform: translateY(0); }
-        .btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; box-shadow: none; }
-
-        .btn-start { background: linear-gradient(135deg, var(--primary), var(--accent)); color: white; }
+        /* Actions */
+        .actions { padding: 25px; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+        .btn { padding: 15px 30px; border-radius: 12px; font-weight: 700; font-size: 1rem; border: none; cursor: pointer; transition: 0.2s; min-width: 200px; display: flex; justify-content: center; align-items: center; }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .btn-start { background: var(--primary); color: white; }
         .btn-stop { background: var(--danger); color: white; display: none; }
-        .btn-dl { background: linear-gradient(135deg, var(--success), #059669); color: white; display: none; }
+        .btn-dl { background: var(--success); color: white; display: none; }
 
-        /* SEO SECTION (Fade Out Logic) */
-        .seo-wrapper { max-width: 1000px; margin: 0 auto 60px; position: relative; background: var(--surface); border-radius: var(--radius); border: 1px solid var(--border); overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
-        .seo-content { padding: 40px; max-height: 250px; overflow: hidden; transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1); }
+        /* SEO Fade Wrapper */
+        .seo-wrapper { max-width: 960px; margin: 0 auto 50px; position: relative; background: var(--surface); border-radius: var(--radius); border: 1px solid var(--border); box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+        .seo-content { padding: 30px; max-height: 200px; overflow: hidden; transition: max-height 0.5s ease; }
         .seo-content.expanded { max-height: 8000px; }
         
-        .seo-fade { position: absolute; bottom: 0; left: 0; right: 0; height: 150px; background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 80%); display: flex; align-items: flex-end; justify-content: center; padding-bottom: 20px; transition: opacity 0.3s; }
+        .seo-fade { position: absolute; bottom: 0; left: 0; right: 0; height: 120px; background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1) 90%); display: flex; align-items: flex-end; justify-content: center; padding-bottom: 20px; transition: opacity 0.3s; }
         .seo-content.expanded + .seo-fade { opacity: 0; pointer-events: none; }
         
-        .seo-toggle-btn { background: white; border: 2px solid var(--primary); color: var(--primary); padding: 12px 28px; border-radius: 100px; font-weight: 700; cursor: pointer; transition: 0.2s; font-size: 0.95rem; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-        .seo-toggle-btn:hover { background: var(--primary-light); transform: translateY(-2px); }
-        .collapse-btn-container { text-align: center; padding-bottom: 30px; display: none; }
+        .seo-btn { background: white; border: 2px solid var(--primary); color: var(--primary); padding: 10px 24px; border-radius: 50px; font-weight: 700; cursor: pointer; transition: 0.2s; }
+        .seo-btn:hover { background: #e0e7ff; }
+        .collapse-btn-wrapper { text-align: center; padding-bottom: 25px; display: none; }
 
-        /* SEO Typography */
-        .seo-content h2 { font-size: 1.8rem; margin: 30px 0 16px; color: var(--text-main); font-weight: 800; letter-spacing: -0.5px; }
+        .seo-content h2 { font-size: 1.6rem; margin: 25px 0 10px; color: var(--text-main); font-weight: 800; }
         .seo-content h2:first-child { margin-top: 0; }
-        .seo-content h3 { font-size: 1.3rem; margin: 24px 0 12px; color: var(--primary); font-weight: 700; }
-        .seo-content p { color: var(--text-sub); margin-bottom: 16px; font-size: 1.05rem; }
-        .seo-content ul { padding-left: 24px; margin-bottom: 20px; color: var(--text-sub); font-size: 1.05rem; }
-        .seo-content li { margin-bottom: 8px; }
+        .seo-content h3 { font-size: 1.2rem; margin: 20px 0 10px; color: var(--primary); font-weight: 700; }
+        .seo-content p, .seo-content ul { color: var(--text-sub); margin-bottom: 15px; font-size: 1rem; line-height: 1.7; }
+        .seo-content ul { padding-left: 20px; }
 
         /* Footer */
-        footer { border-top: 1px solid var(--border); padding: 40px 20px; text-align: center; background: white; }
-        .footer-logo { font-size: 1.5rem; font-weight: 800; margin-bottom: 16px; }
-        .footer-logo span { color: var(--primary); }
-        .internal-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 24px; }
-        .internal-links a { background: var(--bg); border: 1px solid var(--border); padding: 8px 16px; border-radius: 100px; font-size: 0.9rem; font-weight: 600; color: var(--text-main); transition: 0.2s; }
-        .internal-links a:hover { border-color: var(--primary); color: var(--primary); }
-        .copyright { color: var(--text-sub); font-size: 0.95rem; }
+        footer { border-top: 1px solid var(--border); padding: 30px 20px; text-align: center; background: white; }
+        .internal-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 20px; }
+        .internal-links a { background: var(--bg); border: 1px solid var(--border); padding: 6px 12px; border-radius: 50px; font-size: 0.85rem; font-weight: 600; }
+        .internal-links a:hover { color: var(--primary); border-color: var(--primary); }
 
         @media(max-width: 768px) {
             .toolbar { grid-template-columns: 1fr; }
@@ -169,10 +154,9 @@
 
     <div class="app-container">
         
-        <!-- MOBILE BOUNCE RATE FIX: Clear UX message for mobile users -->
         <div id="mobileWarning">
             <h3>⚠️ Desktop Browser Required</h3>
-            <p>Screen recording APIs are intentionally disabled by Apple and Google on mobile browsers for security. Please open this website on your <strong>Windows PC, Mac, or Laptop</strong> to start recording.</p>
+            <p>Screen recording is not supported on mobile browsers due to security restrictions. Please use a Windows PC, Mac, or Laptop.</p>
         </div>
 
         <div class="app-shell" id="desktopApp">
@@ -209,9 +193,8 @@
                 </div>
                 
                 <div class="empty-state" id="emptyState">
-                    <span class="empty-icon">📺</span>
-                    <div class="empty-text">Ready to Capture</div>
-                    <div class="empty-sub">Select your settings and click Start Recording</div>
+                    <div class="empty-text">🎥 Ready to Capture</div>
+                    <div class="empty-sub">Select settings & click Start Recording</div>
                 </div>
 
                 <video id="previewVideo" autoplay muted playsinline></video>
@@ -225,7 +208,6 @@
         </div>
     </div>
 
-    <!-- SEO CONTENT (Hidden by Gradient) -->
     <div class="seo-wrapper" id="seoWrapper">
         <article class="seo-content" id="seoContentBox">
             <h2>The Best 4K Screen Recorder Online Without Watermark</h2>
@@ -249,48 +231,40 @@
                 <li><strong>Stop & Download:</strong> Click the stop button when you are done. The video will be compiled locally in WEBM or MP4 format (depending on browser support) and will be ready for an instant download.</li>
             </ol>
 
-            <h2>Important Note on Memory & Long Recordings (Crash Prevention)</h2>
-            <p>Because our tool operates entirely in your browser to protect your privacy, long recordings (e.g., 2+ hours in 4K resolution) can consume significant RAM (Random Access Memory). If your PC runs out of RAM, the browser tab may crash, resulting in data loss. We highly recommend keeping high-resolution recordings under 1 hour per session, or downloading files periodically.</p>
-
             <h2>Frequently Asked Questions (FAQs)</h2>
             <h3>Is this tool actually free with no watermark?</h3>
             <p>Yes. There are no hidden paywalls, no login walls, and we never stamp our logo on your videos. You own 100% of your content.</p>
-
+            
             <h3>Why can't I use this on my mobile phone?</h3>
             <p>Mobile operating systems like Android and iOS restrict web browsers from capturing the entire device screen due to privacy and security protocols. Screen recording via a browser API is strictly a Desktop/Laptop feature.</p>
-
-            <h3>How do I record internal audio on a Mac?</h3>
-            <p>Apple macOS has strict security rules regarding internal audio capture via browsers. While you can easily record a specific Chrome Tab's audio, capturing the entire system audio on Mac via a web browser might require third-party virtual audio cables like BlackHole or Loopback.</p>
         </article>
         
         <div class="seo-fade" id="seoFade">
-            <button onclick="toggleSEO()" class="seo-toggle-btn">📖 Read Full Guide & FAQs</button>
+            <button onclick="toggleSEO()" class="seo-btn">📖 Read Full Guide & FAQs</button>
         </div>
         
-        <div id="seoCollapseBtn" class="collapse-btn-container">
-            <button onclick="toggleSEO()" class="seo-toggle-btn">⬆️ Collapse Guide</button>
+        <div id="seoCollapseBtn" class="collapse-btn-wrapper">
+            <button onclick="toggleSEO()" class="seo-btn">⬆️ Collapse Guide</button>
         </div>
     </div>
 
     <footer>
-        <div class="footer-logo">Orbit<span>Web</span>Tools</div>
         <div class="internal-links">
             <a href="https://orbitwebtools.github.io/PhotoReady/">📸 PhotoReady (Add Date & Crop)</a>
             <a href="https://orbitwebtools.github.io/image-resizer-20kb/">🖼️ Image Resizer to 20KB</a>
             <a href="https://orbitwebtools.github.io/add-name-and-date/">📝 Name & Date to Passport Photo</a>
         </div>
-        <p class="copyright">© 2026 OrbitWebTools. Engineered for Creators & Students. 100% Client-Side Architecture.</p>
+        <p class="copyright">© 2026 OrbitWebTools. Engineered for Creators & Students.</p>
     </footer>
 
     <script>
-        // --- UX Handling: Mobile vs Desktop ---
-        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        if (isMobile) {
+        // UX: Mobile Warning Check
+        if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
             document.getElementById('mobileWarning').style.display = 'block';
             document.getElementById('desktopApp').style.display = 'none';
         }
 
-        // --- SEO Fade Toggle Logic ---
+        // SEO Fade Toggle
         function toggleSEO() {
             const box = document.getElementById('seoContentBox');
             const fade = document.getElementById('seoFade');
@@ -300,17 +274,17 @@
             
             if (box.classList.contains('expanded')) {
                 fade.style.opacity = '0';
-                setTimeout(() => { fade.style.display = 'none'; }, 300);
+                setTimeout(() => fade.style.display = 'none', 300);
                 collapseBtn.style.display = 'block';
             } else {
                 fade.style.display = 'flex';
-                setTimeout(() => { fade.style.opacity = '1'; }, 10);
+                setTimeout(() => fade.style.opacity = '1', 10);
                 collapseBtn.style.display = 'none';
                 document.getElementById('seoWrapper').scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
         }
 
-        // --- Core Application Logic ---
+        // Screen Recorder Logic
         const startBtn = document.getElementById('startBtn');
         const stopBtn = document.getElementById('stopBtn');
         const dlBtn = document.getElementById('dlBtn');
@@ -322,7 +296,6 @@
         let recorder, stream, timerInterval, videoBlobUrl;
         let chunks = [];
 
-        // Check best supported format
         const getMimeType = () => {
             const types = ['video/webm;codecs=vp9,opus', 'video/webm;codecs=vp8,opus', 'video/webm', 'video/mp4'];
             return types.find(t => MediaRecorder.isTypeSupported(t)) || '';
@@ -334,40 +307,30 @@
                 const fps = parseInt(document.getElementById('fpsSelect').value);
                 const audioConfig = document.getElementById('audioSelect').value;
 
-                // 1. Request Display Media
                 stream = await navigator.mediaDevices.getDisplayMedia({
                     video: { 
                         width: res == '2160' ? 3840 : (res == '720' ? 1280 : 1920), 
                         frameRate: { ideal: fps, max: fps }
                     },
-                    audio: (audioConfig === 'both' || audioConfig === 'sys') ? { echoCancellation: false, noiseSuppression: false } : false
+                    audio: (audioConfig === 'both' || audioConfig === 'sys') ? true : false
                 });
 
-                // 2. Request Microphone if needed
                 if (audioConfig === 'both' || audioConfig === 'mic') {
                     try {
                         const micStream = await navigator.mediaDevices.getUserMedia({ audio: true });
                         micStream.getAudioTracks().forEach(track => stream.addTrack(track));
                     } catch (e) {
-                        alert("Microphone access denied. Continuing without Mic.");
+                        console.warn("Mic access denied");
                     }
                 }
 
-                // 3. Setup Recorder
                 const mime = getMimeType();
-                
-                // Bitrate optimization based on resolution
-                let bitrate = 8000000; // 8 Mbps for 1080p
-                if (res == '2160') bitrate = 25000000; // 25 Mbps for 4K
-                if (res == '720') bitrate = 3000000; // 3 Mbps for 720p
+                let bitrate = res == '2160' ? 25000000 : (res == '720' ? 3000000 : 8000000);
 
-                recorder = new MediaRecorder(stream, { 
-                    mimeType: mime, 
-                    videoBitsPerSecond: bitrate 
-                });
+                recorder = new MediaRecorder(stream, { mimeType: mime, videoBitsPerSecond: bitrate });
 
                 recorder.ondataavailable = e => { 
-                    if(e.data && e.data.size > 0) chunks.push(e.data); 
+                    if (e.data && e.data.size > 0) chunks.push(e.data); 
                 };
                 
                 recorder.onstop = () => {
@@ -382,11 +345,9 @@
                     recBadge.style.display = 'none';
                     stopBtn.style.display = 'none';
                     dlBtn.style.display = 'flex';
-                    
                     startBtn.style.display = 'flex';
                     startBtn.innerText = "Record Another Video";
                     
-                    // Setup Download Button
                     dlBtn.onclick = () => {
                         const a = document.createElement('a');
                         a.href = videoBlobUrl;
@@ -395,11 +356,9 @@
                     };
                 };
 
-                // Start recording with timeslice (2000ms) to manage memory efficiently in browser
-                recorder.start(2000); 
+                recorder.start(1000); 
                 chunks = [];
                 
-                // UI Updates
                 previewVideo.srcObject = stream;
                 emptyState.style.display = 'none';
                 startBtn.style.display = 'none';
@@ -407,7 +366,6 @@
                 stopBtn.style.display = 'flex';
                 recBadge.style.display = 'flex';
 
-                // Timer
                 let seconds = 0;
                 timerInterval = setInterval(() => {
                     seconds++;
@@ -416,14 +374,13 @@
                     timerText.innerText = `${m}:${s}`;
                 }, 1000);
 
-                // Stop if user uses native browser "Stop Sharing" button
                 stream.getVideoTracks()[0].onended = () => {
                     if (recorder.state === 'recording') stopBtn.click();
                 };
 
             } catch (err) {
                 if (err.name !== 'NotAllowedError') {
-                    alert("Capture Error: Your browser might not support screen recording or permission was denied.");
+                    alert("Error: Your browser might not support this feature or permission was denied.");
                 }
             }
         };
